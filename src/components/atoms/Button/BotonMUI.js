@@ -10,6 +10,7 @@ const BotonMUI = styled(Button)`
     ${(props) =>
         props.buttonContained &&
         css`
+            background-color: #007a5e;
             width: 170px;
             height: 45px;
             background-color: #009673;
