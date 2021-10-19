@@ -55,6 +55,149 @@ const Titulos = styled(Typography)`
         css`
             margin-bottom: 30px;
         `}
+
+    ${(props) =>
+        props.tituloNuevo &&
+        css`
+            margin-bottom: 30px;
+            position: absolute;
+            width: 156px;
+            height: 19px;
+            left: 358px;
+            top: 305px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+            color: #000000;
+        `}
+
+    ${(props) =>
+        props.tituloNuevo2 &&
+        css`
+            margin-bottom: 30px;
+            position: absolute;
+            width: 156px;
+            height: 19px;
+            left: 358px;
+            top: 424px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+            color: #000000;
+        `}
+`;
+const TituloNuevo2 = styled(Typography)`
+    margin-bottom: 30px;
+    position: absolute;
+    width: 156px;
+    height: 19px;
+    left: 358px;
+    top: 424px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
 `;
 
-export { TituloBienvenida, Titulos };
+const TituloNuevo = styled(Typography)`
+    position: absolute;
+    width: 156px;
+    height: 19px;
+    left: 358px;
+    top: 305px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #000000;
+`;
+const TituloAnioAprobacion = styled(Typography)`
+    position: absolute;
+    width: 156px;
+    height: 19px;
+    left: 744px;
+    top: 424px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #000000;
+`;
+
+const TituloCargaHoraria = styled(Typography)`
+    position: absolute;
+    width: 156px;
+    height: 19px;
+    left: 917px;
+    top: 424px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #000000;
+`;
+const NotaAprobacion = styled(Typography)`
+    position: absolute;
+    width: 156px;
+    height: 19px;
+    left: 1090px;
+    top: 424px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #000000;
+`;
+const ProgramaMateria = styled(Typography)`
+    position: absolute;
+    width: 260px;
+    height: 19px;
+    left: 1282px;
+    top: 424px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #000000;
+`;
+
+export {
+    TituloBienvenida,
+    Titulos,
+    TituloNuevo,
+    TituloNuevo2,
+    TituloAnioAprobacion,
+    TituloCargaHoraria,
+    NotaAprobacion,
+    ProgramaMateria
+};

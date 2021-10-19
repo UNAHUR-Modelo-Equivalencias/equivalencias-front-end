@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import { styled } from '@mui/system';
-import React from 'react';
+//import React from 'react';
 
 const GridTop = styled(Grid)`
     width: 1306px;

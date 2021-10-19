@@ -15,4 +15,71 @@ const ContenedorInputs = styled(Grid)`
     text-align: center;
 `;
 
-export { InputMUI, ContenedorInputs };
+const InputFormulario = styled(TextField)`
+    position: absolute;
+    width: 350px;
+    height: 28px;
+    left: 358px;
+    top: 337px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+`;
+
+const InputFormulario2 = styled(TextField)`
+    position: absolute;
+    width: 350px;
+    height: 28px;
+    left: 358px;
+    top: 453px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+`;
+
+const AnioAprobacion = styled(TextField)`
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    left: 744px;
+    top: 453px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+`;
+const CargaHoraria = styled(TextField)`
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    left: 917px;
+    top: 453px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+`;
+const NotaAprobacion2 = styled(TextField)`
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    left: 1090px;
+    top: 453px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+`;
+
+export {
+    InputMUI,
+    ContenedorInputs,
+    InputFormulario,
+    InputFormulario2,
+    AnioAprobacion,
+    CargaHoraria,
+    NotaAprobacion2
+};

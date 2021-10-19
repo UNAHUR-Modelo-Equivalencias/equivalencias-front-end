@@ -11,7 +11,7 @@ import styled from 'styled-components';
 import { Grid } from '@mui/material';
 
 const FormularioInicioSesion = () => {
-    const onSubmit = (e) => {};
+    const onSubmit = () => {};
 
     return (
         <FormularioMain>

@@ -1,4 +1,5 @@
-import { Button, createTheme, darken, styled } from '@mui/material';
+//import { Button, createTheme, darken, styled } from '@mui/material';
+import { Button, styled } from '@mui/material';
 import { css } from '@mui/styled-engine';
 
 const BotonMUI = styled(Button)`
@@ -55,6 +56,28 @@ const BotonMUI = styled(Button)`
                 background-color: #007a5e;
             }
         `}
+
+    ${(props) =>
+        props.buttonContainedHeader &&
+        css`
+            width: 170px;
+            height: 45px;
+            background-color: rgba(26, 64, 76, 0.6);
+
+            &:hover {
+                background-color: rgba(26, 64, 76, 0.6);
+            }
+        `}
+`;
+const ButtonNuevo = styled(Button)`
+    position: absolute;
+    width: 78px;
+    height: 28px;
+    left: 1282px;
+    top: 453px;
+
+    background: #f37d63;
+    border-radius: 5px;
 `;
 
-export { BotonMUI };
+export { BotonMUI, ButtonNuevo };

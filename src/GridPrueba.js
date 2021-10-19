@@ -1,10 +1,27 @@
-import { Grid } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
+import { Grid, Input } from '@mui/material';
+//import AddIcon from '@mui/icons-material/Add';
 import { Header } from './Header';
 import { GridTop } from './GridTop';
 import { Titulos } from './components/atoms/Title/Titulos';
 import { BotonMUI } from './components/atoms/Button/BotonMUI';
 import React from 'react';
+import {
+    InputFormulario,
+    ContenedorInputs,
+    InputFormulario2,
+    AnioAprobacion,
+    CargaHoraria,
+    NotaAprobacion2
+} from '../src/components/atoms/Input/InputMUI';
+import {
+    TituloNuevo,
+    TituloNuevo2,
+    TituloAnioAprobacion,
+    TituloCargaHoraria,
+    NotaAprobacion,
+    ProgramaMateria
+} from '../src/components/atoms/Title/Titulos';
+import { ButtonNuevo } from '../src/components/atoms/Button/BotonMUI';
 
 const GridPrueba = () => {
     return (
@@ -56,7 +73,80 @@ const GridPrueba = () => {
                         paddingBottom: '25px'
                     }}
                 >
-                    Formulario
+                    <TituloNuevo centrar blanco tituloGrande>
+                        Materia Solicitada:
+                    </TituloNuevo>
+
+                    <ContenedorInputs>
+                        <InputFormulario
+                            type="materia"
+                            id="outlined-basic"
+                            label="Materia"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                    </ContenedorInputs>
+                    <TituloNuevo2 centrar blanco tituloGrande>
+                        Universidad de origen:
+                    </TituloNuevo2>
+
+                    <ContenedorInputs>
+                        <InputFormulario2
+                            type="Matanza.."
+                            id="outlined-basic"
+                            label="Universidad:"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                    </ContenedorInputs>
+
+                    <TituloAnioAprobacion centrar blanco tituloGrande>
+                        Anio de Aprobacion:
+                    </TituloAnioAprobacion>
+
+                    <ContenedorInputs>
+                        <AnioAprobacion
+                            type="Anio.."
+                            id="outlined-basic"
+                            label="Anio:"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                    </ContenedorInputs>
+
+                    <TituloCargaHoraria centrar blanco tituloGrande>
+                        Carga Horaria:
+                    </TituloCargaHoraria>
+
+                    <ContenedorInputs>
+                        <CargaHoraria
+                            type="Carga Horaria"
+                            id="outlined-basic"
+                            label="Carga Horaria"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                    </ContenedorInputs>
+
+                    <NotaAprobacion centrar blanco tituloGrande>
+                        NotaAprobacion
+                    </NotaAprobacion>
+
+                    <ContenedorInputs>
+                        <NotaAprobacion2
+                            type="NotaAprobacion2"
+                            id="outlined-basic"
+                            label="Nota"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                    </ContenedorInputs>
+
+                    <ProgramaMateria centrar blanco tituloGrande>
+                        Programa de la Materia
+                    </ProgramaMateria>
+
+                    <ButtonNuevo variant="outlined">Adjuntar</ButtonNuevo>
                 </GridTop>
             </Grid>
         </Grid>
