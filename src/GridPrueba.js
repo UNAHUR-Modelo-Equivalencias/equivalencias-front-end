@@ -169,7 +169,7 @@ const GridPrueba = () => {
                     </ContenedorInputs>
 
                     <AniadirMateria variant="outlined">
-                        Aniadir Materia Aprobada font-size: xx-small
+                        Aniadir Materia Aprobada
                     </AniadirMateria>
 
                     <AgregarEquivalencia variant="outlined">
