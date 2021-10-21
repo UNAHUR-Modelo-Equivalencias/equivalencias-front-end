@@ -69,7 +69,7 @@ const BotonMUI = styled(Button)`
             }
         `}
 `;
-const ButtonNuevo = styled(Button)`
+const Adjuntar = styled(Button)`
     position: absolute;
     width: 78px;
     height: 28px;
@@ -78,6 +78,24 @@ const ButtonNuevo = styled(Button)`
 
     background: #f37d63;
     border-radius: 5px;
+    font-size: xx-small;
 `;
 
-export { BotonMUI, ButtonNuevo };
+const AniadirMateria = styled(Button)`
+    position: absolute;
+    width: 209px;
+    height: 31px;
+    left: 358px;
+    top: 670px;
+    font-size: xx-small;
+`;
+const AgregarEquivalencia = styled(Button)`
+    position: absolute;
+    width: 167px;
+    height: 31px;
+    left: 358px;
+    top: 740px;
+    font-size: xx-small;
+`;
+
+export { BotonMUI, Adjuntar, AniadirMateria, AgregarEquivalencia };

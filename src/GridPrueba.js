@@ -11,7 +11,8 @@ import {
     InputFormulario2,
     AnioAprobacion,
     CargaHoraria,
-    NotaAprobacion2
+    NotaAprobacion2,
+    UniversidadOrigInput
 } from '../src/components/atoms/Input/InputMUI';
 import {
     TituloNuevo,
@@ -19,9 +20,14 @@ import {
     TituloAnioAprobacion,
     TituloCargaHoraria,
     NotaAprobacion,
-    ProgramaMateria
+    ProgramaMateria,
+    UniversidadOrigen
 } from '../src/components/atoms/Title/Titulos';
-import { ButtonNuevo } from '../src/components/atoms/Button/BotonMUI';
+import {
+    Adjuntar,
+    AniadirMateria,
+    AgregarEquivalencia
+} from '../src/components/atoms/Button/BotonMUI';
 
 const GridPrueba = () => {
     return (
@@ -87,7 +93,7 @@ const GridPrueba = () => {
                         />
                     </ContenedorInputs>
                     <TituloNuevo2 centrar blanco tituloGrande>
-                        Universidad de origen:
+                        Materia Aprobada:
                     </TituloNuevo2>
 
                     <ContenedorInputs>
@@ -129,7 +135,7 @@ const GridPrueba = () => {
                     </ContenedorInputs>
 
                     <NotaAprobacion centrar blanco tituloGrande>
-                        NotaAprobacion
+                        NotaAprobacion:
                     </NotaAprobacion>
 
                     <ContenedorInputs>
@@ -146,7 +152,29 @@ const GridPrueba = () => {
                         Programa de la Materia
                     </ProgramaMateria>
 
-                    <ButtonNuevo variant="outlined">Adjuntar</ButtonNuevo>
+                    <Adjuntar variant="outlined">Adjuntar</Adjuntar>
+
+                    <UniversidadOrigen centrar blanco tituloGrande>
+                        Universidad De Origen
+                    </UniversidadOrigen>
+
+                    <ContenedorInputs>
+                        <UniversidadOrigInput
+                            type="Universidad Origen"
+                            id="outlined-basic"
+                            label="Ingrese Universidad"
+                            variant="outlined"
+                            margin="normal"
+                        />
+                    </ContenedorInputs>
+
+                    <AniadirMateria variant="outlined">
+                        Aniadir Materia Aprobada font-size: xx-small
+                    </AniadirMateria>
+
+                    <AgregarEquivalencia variant="outlined">
+                        Nueva Equivalencia{' '}
+                    </AgregarEquivalencia>
                 </GridTop>
             </Grid>
         </Grid>

@@ -88,6 +88,7 @@ const TituloNuevo = styled(Typography)`
 
     color: #000000;
 `;
+
 const TituloAnioAprobacion = styled(Typography)`
     position: absolute;
     width: 156px;
@@ -151,6 +152,23 @@ const ProgramaMateria = styled(Typography)`
     color: #000000;
 `;
 
+const UniversidadOrigen = styled(Typography)`
+    position: absolute;
+    width: 156px;
+    height: 19px;
+    left: 358px;
+    top: 541px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #000000;
+`;
+
 export {
     TituloBienvenida,
     Titulos,
@@ -159,5 +177,6 @@ export {
     TituloAnioAprobacion,
     TituloCargaHoraria,
     NotaAprobacion,
-    ProgramaMateria
+    ProgramaMateria,
+    UniversidadOrigen
 };

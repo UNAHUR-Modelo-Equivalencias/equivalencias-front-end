@@ -73,6 +73,17 @@ const NotaAprobacion2 = styled(TextField)`
     box-sizing: border-box;
     border-radius: 5px;
 `;
+const UniversidadOrigInput = styled(TextField)`
+    position: absolute;
+    width: 350px;
+    height: 28px;
+    left: 358px;
+    top: 570px;
+
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+`;
 
 export {
     InputMUI,
@@ -81,5 +92,6 @@ export {
     InputFormulario2,
     AnioAprobacion,
     CargaHoraria,
-    NotaAprobacion2
+    NotaAprobacion2,
+    UniversidadOrigInput
 };
