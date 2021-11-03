@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-import { Grid, TextField } from '@mui/material';
+import { Grid, TextField, Input, styled } from '@mui/material';
 
 const InputMUI = styled(TextField)`
     outline: 1px;
@@ -15,83 +14,31 @@ const ContenedorInputs = styled(Grid)`
     text-align: center;
 `;
 
-const InputFormulario = styled(TextField)`
-    position: absolute;
-    width: 350px;
-    height: 28px;
-    left: 358px;
-    top: 337px;
-
-    background: #ffffff;
-    box-sizing: border-box;
-    border-radius: 5px;
+const StandardInput = styled(TextField)`
+    outline: 0px;
+    border: 0;
+    width: 100%;
+    margin-top: 15px;
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
 `;
 
-const InputFormulario2 = styled(TextField)`
-    position: absolute;
-    width: 350px;
-    height: 28px;
-    left: 358px;
-    top: 453px;
-
-    background: #ffffff;
-
-    box-sizing: border-box;
-    border-radius: 5px;
+const FileUploader = styled(Input) `
+    input[type=file]::file-selector-button {
+        display: none;
+        font-family: Roboto;
+        border: none;
+        padding: 5px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: #F37D63;
+        color: #fff;
+    }
 `;
 
-const AnioAprobacion = styled(TextField)`
-    position: absolute;
-    width: 76px;
-    height: 28px;
-    left: 744px;
-    top: 453px;
-
-    background: #ffffff;
-    box-sizing: border-box;
-    border-radius: 5px;
-`;
-const CargaHoraria = styled(TextField)`
-    position: absolute;
-    width: 76px;
-    height: 28px;
-    left: 917px;
-    top: 453px;
-
-    background: #ffffff;
-    box-sizing: border-box;
-    border-radius: 5px;
-`;
-const NotaAprobacion2 = styled(TextField)`
-    position: absolute;
-    width: 76px;
-    height: 28px;
-    left: 1090px;
-    top: 453px;
-
-    background: #ffffff;
-    box-sizing: border-box;
-    border-radius: 5px;
-`;
-const UniversidadOrigInput = styled(TextField)`
-    position: absolute;
-    width: 350px;
-    height: 28px;
-    left: 358px;
-    top: 570px;
-
-    background: #ffffff;
-    box-sizing: border-box;
-    border-radius: 5px;
-`;
-
-export {
-    InputMUI,
-    ContenedorInputs,
-    InputFormulario,
-    InputFormulario2,
-    AnioAprobacion,
-    CargaHoraria,
-    NotaAprobacion2,
-    UniversidadOrigInput
-};
+export { InputMUI, ContenedorInputs, StandardInput, FileUploader };
