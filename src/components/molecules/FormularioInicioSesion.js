@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { TituloBienvenida, Titulos } from '../atoms/Title/Titulos';
 import {
     OlvidastePassword,
@@ -12,6 +12,16 @@ import { Formulario } from '../atoms/Formulario/Formulario';
 
 const FormularioInicioSesion = () => {
     const onSubmit = (e) => {};
+
+    // Validaciones------
+
+    const [dni, setDni] = React.useState("");
+    const [contraseña, setContraseña] = React.useState("");
+    const [leyenda, setLeyenda] = React.useState("");
+    const [errorDni, setErrorDni] = React.useState(false);
+    const [errorContraseña, setErrorContraseña] = React.useState(false);
+
+    // Fin validaciones
 
     return (
         <FormularioMain>
@@ -33,20 +43,56 @@ const FormularioInicioSesion = () => {
                     <div>
                         <ContenedorInputs>
                             <InputMUI
-                                type="text"
+                                // type="text"
+                                // id="outlined-basic"
+                                // label="DNI"
+                                // variant="outlined"
+                            onChange={(e) =>{
+                                setDni(e.target.value);
+
+                                if(dni.lenght > 10){
+                                    setErrorDni(true);
+                                    setLeyenda("El Dni contiene mas de 45 caracteres.")}
+                                else{
+                                    setErrorDni(false);
+                                    setLeyenda("")
+                                }
+                            }}
+                                error={errorDni}
                                 id="outlined-basic"
                                 label="DNI"
+                                defaultValue="Usuario"
+                                helperText={leyenda}
                                 variant="outlined"
                             />
                         </ContenedorInputs>
 
                         <ContenedorInputs>
                             <InputMUI
-                                type="password"
+                                // type="password"
+                                // id="outlined-basic"
+                                // label="Contraseña"
+                                // variant="outlined"
+                                // margin="normal"
+                                onChange={(e) =>{
+                                    setContraseña(e.target.value);
+    
+                                    if(contraseña.lenght > 10){
+                                        setErrorContraseña(true);
+                                        setLeyenda("La contraseña contiene mas de 10 caracteres.")}
+                                    else{
+                                        setErrorContraseña(false);
+                                        setLeyenda("")
+                                    }
+                                }}
+                                
+                                error={errorContraseña}
                                 id="outlined-basic"
                                 label="Contraseña"
+                                defaultValue="Inserte la contraseña "
+                                helperText={leyenda}
                                 variant="outlined"
-                                margin="normal"
+                                
                             />
                         </ContenedorInputs>
                     </div>
