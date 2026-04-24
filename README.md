@@ -41,6 +41,9 @@ Asumiendo que ya configuraste todos los prerrequisitos, estos son los comandos q
 # Copia las variables de entorno necesarias para interactuar con la API.
 cp .env.example .env
 
+# En PowerShell de Windows, podés usar este equivalente.
+Copy-Item .env.example .env
+
 # Instala las dependencias Node del proyecto.
 npm install
 ```
